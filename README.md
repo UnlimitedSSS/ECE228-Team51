@@ -12,15 +12,17 @@ In 'VGG11.py', you can train and validate the model with the structure we called
 The original version of the dataset we used is from : 
 https://www.kaggle.com/datasets/moltean/fruits. 
 
-The set contains 90380 images of 131 fruits and vegetables and is constantly updated with images of new fruits and vegetables. In our project, we selected 17628 images of 35 fruits as the data set of our project. which you can find in folder 'dataset'. 
+The set contains 90380 images of 131 fruits and vegetables and is constantly updated with images of new fruits and vegetables. In our project, we selected 17629 images of 35 fruits as the data set of our project. which you can find in folder 'dataset'. 
 ##How to run our code and reproduce our results
 To reproduce the results we presented in the report, you should follow the instructions below:
 ###Preprocess the dataset:
-1.Unzip 'training.zip' and 'test.zip' in the folder 'dataset'.
+1.Download the data sets from the link:
+https://drive.google.com/drive/folders/1pfWUf1j4nBMo15GT66Rggy7HVOq73V_u?usp=sharing
+2.Create a new folder under the same directory of this 'README.md'.
+3.Unzip 'training.zip' and 'test.zip' in the folder 'dataset'.
+4.Run the code named as 'data.py' to obtain the 4-channel (RGB + grey scale value) tensor of images. You can follow the comments in code to preprocess both training dataset and test dataset by modify the code slightly.
 
-2.Run the code named as 'data.py' to obtain the 4-channel (RGB + grey scale value) tensor of images. You can follow the comments in code to preprocess both training dataset and test dataset by modify the code slightly.
-
-3.To augment the training dataset, you should run 'data_process.py' after you obtaining the 4-channel tensor('training_data_before_per.pt' and 'training_label_before_per.pt').
+5.To augment the training dataset, you should run 'data_process.py' after you obtaining the 4-channel tensor('training_data_before_per.pt' and 'training_label_before_per.pt').
 
 ####Note: 
 Preprocessing may cost a lot of time. To save your time, you can download the dataset we have already preprocessed. 
