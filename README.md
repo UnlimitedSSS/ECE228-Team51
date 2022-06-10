@@ -1,4 +1,5 @@
-##About main programs
+About main programs
+=
 The four '.py' files are the main programs we construct to train and test accuracies of our models with different structures.You can also obtain the plots of training loss together with test loss. The names of the files indicate the structures we use to build our models:
 
 In 'prototype.py', you can train and validate the model with the structure we called 'prototype' in our final report. 
